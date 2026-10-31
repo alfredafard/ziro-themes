@@ -11,6 +11,7 @@ Thank you for contributing your theme to the Ziro community!
    - Example: `my-neon-flow.toml`.
 3. **No Secrets**: Never include private API keys, cloud tokens, database URLs, or personal passwords in your configuration.
 4. **Location**: Place your theme file under `themes/<your-github-username>/<theme-name>.toml`.
+   - **Important**: Do not submit themes to `themes/starship/`. That directory is reserved for official presets curated from the upstream Starship project. Community submissions must always be placed under your own GitHub username folder.
 
 ---
 

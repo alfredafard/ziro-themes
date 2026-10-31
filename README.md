@@ -8,10 +8,10 @@ Community Starship themes for [ziro-shell](https://github.com/Pakrohk/ziro-shell
 # Browse themes locally (after cloning this repo)
 ls themes/*/
 
-# Apply a theme
+# Apply an official preset
 starship preset <name> -o ~/.config/starship.toml
 # OR copy directly
-cp themes/Pakrohk/pastel-powerline.toml ~/.config/starship.toml
+cp themes/starship/pastel-powerline.toml ~/.config/starship.toml
 
 # Share your own theme
 ziro theme submit
@@ -19,29 +19,31 @@ ziro theme submit
 
 ## Structure
 
-Themes are organized by contributor username:
+Themes are organized by contributor namespace:
 
 ```
 themes/
-├── Pakrohk/
+├── starship/                   ← official Starship presets (curated by ziro)
 │   ├── catppuccin-powerline.toml
 │   ├── gruvbox-rainbow.toml
 │   ├── jetpack.toml
 │   ├── pastel-powerline.toml
 │   └── tokyo-night.toml
-└── <your-github-username>/
+└── <your-github-username>/     ← community contributions
     └── <your-theme-name>.toml
 ```
 
+> **Note**: Official Starship presets live under `themes/starship/`. These are curated by Ziro for convenience but originate from the [Starship project](https://starship.rs/presets/). Community themes live under `themes/<your-github-username>/`.
+
 ## Seeded Presets
 
-| Theme | Author | Description |
+| Theme | Origin / Author | Description |
 |---|---|---|
-| `pastel-powerline` | @Pakrohk | Soft pastel powerline prompt with powerline arrows |
-| `tokyo-night` | @Pakrohk | Clean dark aesthetic inspired by Tokyo Night |
-| `gruvbox-rainbow` | @Pakrohk | Warm retro gruvbox palette with powerline segments |
-| `catppuccin-powerline` | @Pakrohk | Soothing pastel theme using Catppuccin palette |
-| `jetpack` | @Pakrohk | Modern two-line powerline prompt with rich context |
+| `pastel-powerline` | Starship Project | Soft pastel powerline prompt with powerline arrows |
+| `tokyo-night` | Starship Project | Clean dark aesthetic inspired by Tokyo Night |
+| `gruvbox-rainbow` | Starship Project | Warm retro gruvbox palette with powerline segments |
+| `catppuccin-powerline` | Starship Project | Soothing pastel theme using Catppuccin palette |
+| `jetpack` | Starship Project | Modern two-line powerline prompt with rich context |
 
 ## Submitting a theme
 

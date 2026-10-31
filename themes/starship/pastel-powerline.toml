@@ -1,3 +1,7 @@
+# Source: Official Starship preset — https://starship.rs/presets/pastel-powerline
+# Author: Starship project (Matan Kushner and contributors)
+# Curated by: Ziro project (see themes/README.md)
+
 format = """
 [](#9A348E)\
 $os\

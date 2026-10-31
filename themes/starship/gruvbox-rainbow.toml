@@ -1,3 +1,7 @@
+# Source: Official Starship preset — https://starship.rs/presets/gruvbox-rainbow
+# Author: Starship project (Matan Kushner and contributors)
+# Curated by: Ziro project (see themes/README.md)
+
 "$schema" = 'https://starship.rs/config-schema.json'
 
 format = """

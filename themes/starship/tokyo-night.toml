@@ -1,3 +1,7 @@
+# Source: Official Starship preset — https://starship.rs/presets/tokyo-night
+# Author: Starship project (Matan Kushner and contributors)
+# Curated by: Ziro project (see themes/README.md)
+
 format = """
 [░▒▓](#a3aed2)\
 [  ](bg:#a3aed2 fg:#090c0c)\
