@@ -1,0 +1,47 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+
+add_newline = false
+command_timeout = 100
+
+format = """$directory${custom.git_transition}$git_branch$git_status${custom.git_end}${custom.nogit_end}"""
+
+[directory]
+style = "bg:#a5c8ff fg:#ffffff"
+format = "[ $path ]($style)"
+fish_style_pwd_dir_length = 4
+truncation_length = 0
+truncation_symbol = ""
+
+[custom.git_transition]
+when = "git rev-parse --is-inside-work-tree 2>/dev/null"
+format = "[](fg:#a5c8ff bg:#d9bde3)"
+
+[git_branch]
+style = "bg:#d9bde3 fg:#2d3548"
+symbol = ""
+format = "[ $branch]($style)"
+
+[git_status]
+style = "bg:#d9bde3 fg:#2d3548"
+format = "([ $all_status$ahead_behind]($style))"
+ignore_submodules = true
+untracked = "?"
+modified = "!"
+staged = "+"
+renamed = "»"
+deleted = "✘"
+ahead = "⇡"
+behind = "⇣"
+diverged = "⇕"
+conflicted = "="
+
+[custom.git_end]
+when = "git rev-parse --is-inside-work-tree 2>/dev/null"
+format = "[ ](bg:#d9bde3)[](fg:#d9bde3) "
+
+[custom.nogit_end]
+when = "! git rev-parse --is-inside-work-tree 2>/dev/null"
+format = "[](fg:#a5c8ff) "
+
+[character]
+disabled = true
